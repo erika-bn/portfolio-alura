@@ -66,6 +66,46 @@ body{
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
+.skills, .timeline {
+    list-style: none;
+    padding-left: 0;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    color: var(--cor-terciaria);
+    line-height: 1.6;
+}
+
+.skills li::before {
+    content: "🔸 ";
+}
+
+.timeline li::before {
+    content: "⏳ ";
+}
+.experiencias, .formacao, .skills, .certificacoes {
+  list-style: none;
+  padding-left: 0;
+  font-family: var(--fonte-secundaria);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--cor-secundaria);
+}
+
+.experiencias li::before,
+.formacao li::before,
+.certificacoes li::before {
+  content: "📌 ";
+}
+
+.skills li::before {
+  content: "🔹 ";
+}
+
+a {
+  color: var(--cor-terciaria);
+  text-decoration: underline;
+}
+
 
 .apresentacao__botoes {
     display: flex;
@@ -140,7 +180,36 @@ body{
     .apresentacao__conteudo {
         width: auto;
     }
+}
+@media (max-width: 480px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 10%;
+        gap: 32px;
+    }
 
+    .apresentacao__conteudo__titulo {
+        font-size: 1.5rem;
+    }
 
+    .apresentacao__conteudo__texto,
+    .apresentacao__botoes__subtitulos,
+    .apresentacao__botoes__link {
+        font-size: 1rem;
+    }
 
+    .apresentacao__botoes__link {
+        width: 100%;
+        padding: 16px 0;
+    }
+
+    .apresentacao__imagem {
+        width: 100%;
+    }
+
+    .cabecalho__menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
 }
