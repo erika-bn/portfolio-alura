@@ -138,6 +138,19 @@ a {
   text-decoration: underline;
 }
 
+.destaque {
+  color: var(--cor-terciaria);
+  font-weight: bold;
+}
+
+.experiencias,
+.formacao,
+.skills,
+.certificacoes,
+.apresentacao__conteudo__texto {
+  color: var(--cor-secundaria);
+}
+
 
 .apresentacao__botoes {
     display: flex;
@@ -163,7 +176,7 @@ a {
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
-    font-weight: 600px;
+    font-weight: 600;
     padding: 21.5px 0;
     text-decoration:none;
     color: var(--cor-secundaria);
@@ -172,7 +185,14 @@ a {
 .apresentacao__botoes__link:hover {
     background-color: var(--cor-hover);  
 }
-
+.icone--botao {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  object-fit: contain;
+  vertical-align: middle;
+  display: inline-block;
+}
 .apresentacao__conteudo__texto {
     text-decoration: none;
     color: var(--cor-secundaria);
