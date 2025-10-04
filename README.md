@@ -5,7 +5,7 @@ Esse projeto tem como objetivo apresentar minhas habilidades iniciais com estrut
 
 ---
 
-![Preview do projeto](https://user-images.githubusercontent.com/77756047/211304452-220fedf0-f91b-490f-8a65-a60ce860bc5c.png)
+![Preview do projeto](https://github.com/erika-bn/portfolio-alura/blob/main/assets/home.png)
 
 ---
 
