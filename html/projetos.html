@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Projetos — Erika Nova</title>
+  <meta name="description" content="Projetos em destaque de Erika Nova: Smart Home IA, Portão Automático MQTT e Fluvius. IoT, ESP32/ESP8266, Node-RED, Tasmota, Home Assistant, AWS." />
+  <meta http-equiv="content-language" content="pt-BR" />
+
+  <!-- Social (ajuste og:image quando tiver um banner) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Projetos — Erika Nova" />
+  <meta property="og:description" content="IoT + Web: Smart Home IA, Portão Automático MQTT e Fluvius." />
+  <meta property="og:image" content="https://portfolio-alura-gamma-six.vercel.app/assets/img/home.png" />
+  <meta property="og:url" content="https://portfolio-alura-gamma-six.vercel.app/html/projetos.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
+  <link rel="alternate icon" href="/assets/img/favicon.png" />
+  <link rel="stylesheet" href="/styles/style.css" />
+
+  <style>
+    /* específicos desta página */
+    .projetos { padding: 3rem 1rem; max-width: 1080px; margin: 0 auto; }
+    .projetos h1 { font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem); line-height: 1.2; margin-bottom: .25rem; }
+    .projetos p.lead { color: #444; margin: 0 0 1.25rem; }
+
+    .cards { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); list-style: none; padding: 0; }
+    .card { border: 1px solid #eaeaea; border-radius: 16px; padding: 1rem; background: #fff; transition: transform .2s ease; }
+    .card:hover { transform: translateY(-4px); }
+    .card img { display: block; width: 100%; height: auto; border-radius: 12px; }
+    .card h2 { font-size: 1.15rem; margin: .75rem 0 .25rem; }
+    .card p.desc { margin: .25rem 0 .75rem; color: #333; }
+
+    .badges, .highlights { display: flex; gap: .5rem; flex-wrap: wrap; list-style: none; padding: 0; margin: .5rem 0; }
+    .badges li { font-size: .8rem; padding: .25rem .5rem; border: 1px solid #ddd; border-radius: 999px; }
+    .highlights li { font-size: .95rem; }
+    .links a { margin-right: .75rem; }
+
+    /* acessibilidade/foco (segue padrão do site) */
+    :focus-visible { outline: 3px solid #000; outline-offset: 3px; }
+    .cabecalho__menu__link[aria-current="page"] { font-weight: 700; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho padronizado -->
+  <header class="cabecalho">
+    <nav class="cabecalho__menu" aria-label="Menu principal">
+      <a class="cabecalho__menu__link" href="/index.html">Home</a>
+      <a class="cabecalho__menu__link" href="/html/about.html">Sobre mim</a>
+      <a class="cabecalho__menu__link" href="/html/projetos.html" aria-current="page">Projetos</a>
+      <a class="cabecalho__menu__link" href="/html/cv.html">Currículo</a>
+    </nav>
+  </header>
+
+  <!-- Usa a mesma classe de main para manter o layout -->
+  <main class="apresentacao">
+    <section class="projetos">
+      <h1>Projetos em Destaque</h1>
+      <p class="lead">IoT + Web: conecto dispositivos físicos a fluxos e dashboards. Aqui estão 3 cases-chave.</p>
+
+      <ul class="cards" role="list">
+        <!-- CARD 1 -->
+        <li class="card" role="listitem" data-tags="ESP32 Node-RED Home Assistant AWS MQTT Zigbee2MQTT Tasmota">
+          <img src="/assets/img/SMARTHOME.jpg" alt="Dashboard do Smart Home com automações, energia e status de dispositivos" loading="lazy" width="640" height="360">
+          <h2>Smart Home IA (TCC)</h2>
+          <p class="desc">
+            Casa inteligente com IA: ESP8266/ESP32 (Tasmota), Node-RED, Zigbee2MQTT, Home Assistant e AWS.
+            Automação de iluminação, portões/portas, energia solar, câmeras e alertas.
+          </p>
+          <ul class="badges">
+            <li>ESP8266/ESP32</li><li>MQTT</li><li>Node-RED</li><li>Home Assistant</li><li>Zigbee2MQTT</li><li>Tasmota</li><li>AWS</li>
+          </ul>
+          <ul class="highlights">
+            <li>Rotinas preditivas e comandos por IA</li>
+            <li>Monitoramento de energia solar</li>
+            <li>Integração multi-dispositivos + dashboards</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/erika-bn/Smart-home" target="_blank" rel="noopener">Código</a>
+            <a href="https://www.youtube.com/watch?v=ZbR1B3CSwtY" target="_blank" rel="noopener">Vídeo</a>
+          </p>
+        </li>
+
+        <!-- CARD 2 -->
+        <li class="card" role="listitem" data-tags="ESP32 Node-RED MQTT">
+          <img src="/assets/img/portao.webp" alt="Protótipo do portão automático com servo motor e sensores" loading="lazy" width="640" height="360">
+          <h2>Portão Automático MQTT</h2>
+          <p class="desc">
+            Controle de portão via ESP32 + Node-RED: acionamento por fluxo, estado por sensores e lógica de segurança.
+          </p>
+          <ul class="badges"><li>ESP32</li><li>MQTT</li><li>Node-RED</li></ul>
+          <ul class="highlights">
+            <li>Fluxos com lógica de travas e timeout</li>
+            <li>Feedback visual (LEDs) e telemetria</li>
+            <li>Base para integração com app/web</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/erika-bn/Portao-ESP32" target="_blank" rel="noopener">Código</a>
+          </p>
+        </li>
+
+        <!-- CARD 3 -->
+        <li class="card" role="listitem" data-tags="Maps Notificações">
+          <img src="/assets/img/fluvius.png" alt="App Fluvius com mapa e camadas de risco de enchentes" loading="lazy" width="640" height="360">
+          <h2>Fluvius (Alerta de Enchentes)</h2>
+          <p class="desc">
+            Aplicativo geoespacial para visualizar risco e emitir alertas de enchentes. Foco em UX simples e dados claros.
+          </p>
+          <ul class="badges"><li>Mapas</li><li>Notificações</li></ul>
+          <ul class="highlights">
+            <li>Camadas de risco e pontos críticos</li>
+            <li>Alertas para áreas selecionadas</li>
+            <li>Arquitetura preparada para APIs públicas</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/SEU_REPO_FLUVIUS" target="_blank" rel="noopener">Código</a>
+          </p>
+        </li>
+
+
+<!-- CARD 4 -->
+        <li class="card" role="listitem" data-tags="Maps Notificações">
+          <img src="/assets/img/Swift.png" alt="App Swift " loading="lazy" width="640" height="360">
+          <h2>Challeng - Desafio 2 da FIAP</h2>
+          <p class="desc">
+            Empresa foi a JBS - Swift: Aplicativo para melhoria e bem estar dos colaboradores.
+          </p>
+          <ul class="badges"><li>Mapas</li><li>Notificações</li></ul>
+          <ul class="highlights">s
+            <li>Camadas de risco e pontos críticos</li>
+            <li>Alertas para áreas selecionadas</li>
+            <li>Arquitetura preparada para APIs públicas</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/erika-bn/Challenge-JBS" target="_blank" rel="noopener">Código</a>
+          </p>
+        </li>
+
+<!-- CARD 5 -->
+        <li class="card" role="listitem" data-tags="Maps Notificações">
+          <img src="/assets/img/site.png" alt="App Swift " loading="lazy" width="640" height="360">
+          <h2>Curso Alura - Site Meteora</h2>
+          <p class="desc">
+            Curso de HTML e CSS da Alura - Site fictício.
+          </p>
+          <ul class="badges"><li>Mapas</li><li>Notificações</li></ul>
+          <ul class="highlights">s
+            <li>Camadas de risco e pontos críticos</li>
+            <li>Alertas para áreas selecionadas</li>
+            <li>Arquitetura preparada para APIs públicas</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/erika-bn/curso-html-alura" target="_blank" rel="noopener">Código</a>
+            <a href="https://aluraplus-swart-sigma.vercel.app/" target="_blank" rel="noopener">Site</a>
+          </p>
+        </li>
+
+<!-- CARD 6 -->
+        <li class="card" role="listitem" data-tags="Maps Notificações">
+          <img src="/assets/img/fintech.png" alt="App Swift " loading="lazy" width="640" height="360">
+          <h2>Fintech da FIAP</h2>
+          <p class="desc">
+            Aplicativo financeiro para controle de gastos e investimentos.
+          <ul class="badges"><li>Mapas</li><li>Notificações</li></ul>
+          <ul class="highlights">s
+            <li>Camadas de risco e pontos críticos</li>
+            <li>Alertas para áreas selecionadas</li>
+            <li>Arquitetura preparada para APIs públicas</li>
+          </ul>
+          <p class="links">
+            <a href="https://github.com/erika-bn/fintech" target="_blank" rel="noopener">Código</a>
+          </p>
+        </li>
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </section>
+  </main>
+
+  <!-- Rodapé padronizado -->
+  <footer class="rodape">
+    <p>© 2025 Erika Nova</p>
+  </footer>
+</body>
+</html>

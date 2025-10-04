@@ -1,51 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
-    <link rel="stylesheet" href="./styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erika Nova — Portfólio</title>
+
+  <!-- Descrição e SEO -->
+  <meta name="description" content="Portfólio de Erika Nova — desenvolvedora Front-end e estudante de Automação Industrial. Explore projetos com IoT, Node-RED, Tasmota e Home Assistant." />
+  <meta http-equiv="content-language" content="pt-BR" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
+  <link rel="alternate icon" href="/assets/img/favicon.png" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/styles/style.css" />
 </head>
+
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="abount.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="cv.html">Currículo</a>
-        </nav>
-    </header>
+  <!-- ===== Cabeçalho ===== -->
+  <header class="cabecalho">
+    <nav class="cabecalho__menu">
+      <a class="cabecalho__menu__link" href="/index.html" aria-current="page">Home</a>
+      <a class="cabecalho__menu__link" href="/html/about.html">Sobre mim</a>
+      <a class="cabecalho__menu__link" href="/html/projetos.html">Projetos</a>
+      <a class="cabecalho__menu__link" href="/html/cv.html">Currículo</a>
+    </nav>
+  </header>
 
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">
-            Olá! Eu sou Erika Nova, e este é meu portfólio profissional.
-            </h1>
-            <p class="apresentacao__conteudo__texto">
-            Aqui você encontra um pouco da minha trajetória como desenvolvedora, estudante de tecnologia e apaixonada por inovação. Explore os projetos, experiências e habilidades que venho construindo com dedicação.</p>
-            <div class="apresentacao__botoes">
-                <h2 class="apresentacao__botoes__subtitulos">Acesse minhas redes:</h2>
-                <a class="apresentacao__botoes__link" href="https://github.com/erika-bn/">
-                    <img src="./assets/Logo Github.png " alt="Logo do GitHub">
-                    GitHub
-                </a>
-                <a class="apresentacao__botoes__link" href="https://linkedin.com/in/erika-nova/">
-                    <img src="./assets/Logo linkedin.png " alt="Logo do LinkedIn">
-                    Linkedin
-                </a>
-                <a class="apresentacao__botoes__link" href="https://wa.me/5511950504082" target="_blank">
-                <img class="icone-botao" src="./assets/logo-wpp.png" alt="Ícone do WhatsApp">
-                    WhatsApp
-                </a>
+  <!-- ===== Conteúdo principal ===== -->
+  <main class="apresentacao">
+    <section class="apresentacao__conteudo">
+      <h1 class="apresentacao__conteudo__titulo">
+        Olá! Eu sou <strong>Erika Nova</strong> — desenvolvedora Front-end e estudante de Automação Industrial.
+      </h1>
 
-            </div>
-        </section>
-        <img class="apresentacao__imagem" src="./assets/Imagem.png" alt="foto de joana">
-    </main>
-    <footer class="rodape">
-  <p>
-    © 2025 Erika Nova 
-  </p>
-</footer>
-   
+      <p class="apresentacao__conteudo__texto">
+        Aqui você encontra um pouco da minha trajetória como desenvolvedora e estudante apaixonada por inovação.
+        Explore meus <strong>projetos em IoT, automação e desenvolvimento web</strong> — todos construídos com dedicação e criatividade.
+      </p>
+
+      <div class="apresentacao__botoes">
+        <h2 class="apresentacao__botoes__subtitulos">Acesse minhas redes:</h2>
+
+        <a class="apresentacao__botoes__link" href="https://github.com/erika-bn/" target="_blank" rel="noopener">
+          <img src="/assets/img/Logo Github.png" alt="Logo do GitHub" loading="lazy" width="24" height="24" />
+          GitHub
+        </a>
+
+        <a class="apresentacao__botoes__link" href="https://linkedin.com/in/erika-nova/" target="_blank" rel="noopener">
+          <img src="/assets/img/Logo linkedin.png" alt="Logo do LinkedIn" loading="lazy" width="24" height="24" />
+          LinkedIn
+        </a>
+
+        <a class="apresentacao__botoes__link" href="https://wa.me/5511950504082" target="_blank" rel="noopener">
+          <img class="icone-botao" src="/assets/img/logo-wpp.png" alt="Ícone do WhatsApp" loading="lazy" width="24" height="24" />
+          WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <img
+      class="apresentacao__imagem"
+      src="/assets/img/Imagem.png"
+      alt="Foto de Erika Nova"
+      loading="lazy"
+      width="420"
+      height="420"
+    />
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="rodape">
+    <p>© 2025 Erika Nova</p>
+  </footer>
 </body>
 </html>
